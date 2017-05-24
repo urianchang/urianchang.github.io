@@ -4,11 +4,42 @@
         <meta charset="utf-8">
         <!-- Material Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" type="text/css" href="static/main.css">
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- For smooth scrolling -->
+        <script type="text/javascript" src="static/smoothScroll.js" defer></script>
+        <!-- Custom scripts -->
+        <script type="text/javascript" src="static/main.js" defer></script>
         <link rel="shortcut icon" href="u_icon.ico" />
         <title>Urian Chang</title>
     </head>
     <body>
-        <h1>Hello friends!</h1>
-        <i class="material-icons" style="color:orange;">whatshot</i>
+        <div class="navbar" id="nav">
+            <a href="#welcome">Home</a>
+            <a href="#portfolio">Stuff I Made</a>
+            <a href="#test1">Test 1</a>
+            <a href="#test2">Test 2</a>
+        </div>
+        <div class="welcome" id="page1">
+            <a id="welcome" class="smooth"></a>
+            <h1>Hello friends!</h1>
+            <i class="material-icons" style="color:orange;">whatshot</i>
+        </div>
+            <div id="page2">
+                <a id="portfolio" class="smooth"></a>
+                Stuff I made goes here.
+            </div>
+
+            <div id="page3">
+                <a id="test1" class="smooth"></a>
+                TEST 1 content goes here.
+            </div>
+
+            <div id="page4">
+                <a id="test2" class="smooth"></a>
+                TEST 2 content goes here.
+            </div>
+
     </body>
 </html>
