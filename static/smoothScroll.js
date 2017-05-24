@@ -1,20 +1,19 @@
-// Add smooth scrolling to nav bar links
+//: Add smooth scrolling to nav bar links
 $("#nav a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
+    //: Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 50
-      }, 800, 'swing', function(){
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
+      event.preventDefault();   //: Prevent default anchor click behavior
+      var hash = this.hash;     //: Store hash
+      //: Using jQuery's animate() method to add smooth page scroll
+      $('html, body').animate(
+          {
+              scrollTop: $(hash).offset().top - 50
+          },
+          800,
+          'swing',
+        //   function(){
+        //       window.location.hash = hash; //: Add hash (#) to URL when done scrolling
+        //   }
+      );
+    }
 });

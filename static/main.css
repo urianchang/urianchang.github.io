@@ -1,11 +1,11 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #page1, #page2, #page3, #page4 {
-    height: 1000px;
+    width: 100%;
 }
-/* The navigation bar */
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -13,18 +13,47 @@
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
 }
-
-/* Links inside the navbar */
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-
-/* Welcome content */
+.navbarLink:hover {
+    text-decoration: underline;
+}
 .welcome {
     margin-top: 46px; /* Add a top margin to avoid content overlay */
+    text-align: center;
+}
+.mid-text {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.welcome h2 {
+    margin-bottom: 10px;
+}
+.welcome h3 {
+    margin-top: 10px;
+}
+.welcome h3 a {
+    text-decoration: none;
+    color: black;
+    margin: 0px 10px;
+}
+.welcome h3 a:hover {
+    color: red;
+}
+.typewriter {
+    border-right: 1px solid black;
+    padding-right: 2px;
+    display: inline;
+}
+.name {
+    font-weight: bold;
+    letter-spacing: 1px;
 }

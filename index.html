@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <!-- Material Icons -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/948a9974d5.js"></script>
+        <!-- Custom CSS -->
         <link rel="stylesheet" type="text/css" href="static/main.css">
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -16,30 +19,27 @@
     </head>
     <body>
         <div class="navbar" id="nav">
-            <a href="#welcome">Home</a>
-            <a href="#portfolio">Stuff I Made</a>
-            <a href="#test1">Test 1</a>
-            <a href="#test2">Test 2</a>
+            <a href="#welcome"><span class="name">Urian Chang</span></a>
+            <a class="navbarLink" href="#portfolio">Stuff I made</a>
         </div>
-        <div class="welcome" id="page1">
+
+        <div class="welcome page" id="page1">
             <a id="welcome" class="smooth"></a>
-            <h1>Hello friends!</h1>
-            <i class="material-icons" style="color:orange;">whatshot</i>
+            <h2 class="mid-text">Hello, friend!</h2>
+            <h2 class="mid-text"><div id="typewriter" class="typewriter"></div></h2>
+            <h3 class="mid-text">
+                <a class="fa fa-lg fa-linkedin-square" href="https://www.linkedin.com/in/urianchang/"></a>
+                <a class="fa fa-lg fa-github" href="https://github.com/urianchang"></a>
+                <a class="fa fa-lg fa-envelope" href="mailto:urianchang@gmail.com"></a>
+            </h3>
         </div>
-            <div id="page2">
-                <a id="portfolio" class="smooth"></a>
-                Stuff I made goes here.
-            </div>
 
-            <div id="page3">
-                <a id="test1" class="smooth"></a>
-                TEST 1 content goes here.
-            </div>
-
-            <div id="page4">
-                <a id="test2" class="smooth"></a>
-                TEST 2 content goes here.
-            </div>
+        <div class="page" id="page2">
+            <a id="portfolio" class="smooth"></a>
+            <h2>Stuff that I made</h2>
+            <h3>Web</h3>
+            <h3>iOS</h3>
+        </div>
 
     </body>
 </html>
