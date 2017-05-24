@@ -12,17 +12,28 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    height: 46px;
 }
 .navbar a {
     float: left;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0px 10px;
     text-decoration: none;
 }
 .navbarLink:hover {
     text-decoration: underline;
+}
+.navbarLink {
+    font-size: 14px;
+    line-height: 46px;
+}
+.name {
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 46px;
+    font-size: 17px;
 }
 .welcome {
     margin-top: 46px; /* Add a top margin to avoid content overlay */
@@ -52,8 +63,4 @@
     border-right: 1px solid black;
     padding-right: 2px;
     display: inline;
-}
-.name {
-    font-weight: bold;
-    letter-spacing: 1px;
 }
