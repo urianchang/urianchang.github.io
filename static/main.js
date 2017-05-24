@@ -7,7 +7,7 @@ $(function(){
 });
 
 //: Welcome message
-var msg = "I'm Urian and I'll help you make stuff.",
+var msg = "I'm Urian. I'll help you make stuff.",
     el = document.getElementById('typewriter'),
     character_count = 0;
 
