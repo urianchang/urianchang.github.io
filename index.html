@@ -6,39 +6,47 @@
         <!-- Font Awesome -->
         <script src="https://use.fontawesome.com/948a9974d5.js"></script>
         <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="static/loading.css">
         <link rel="stylesheet" type="text/css" href="static/main.css">
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- For smooth scrolling -->
-        <script type="text/javascript" src="static/smoothScroll.js" defer></script>
         <!-- Custom scripts -->
-        <script type="text/javascript" src="static/main.js" defer></script>
+        <script type="text/javascript" src="static/loading.js"></script>
+        <script type="text/javascript" src="static/main.js"></script>
+        <script type="text/javascript" src="static/smoothScroll.js"></script>
         <link rel="shortcut icon" href="u_icon.ico" />
         <title>Urian Chang</title>
     </head>
     <body>
-        <div class="navbar" id="nav">
-            <a href="#welcome"><span class="name">Urian Chang</span></a>
-            <a class="navbarLink" href="#portfolio">Stuff I made</a>
+        <div id="loading" class="loading">
+            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
         </div>
+        <div id="content" class="content_class">
+            <div class="navbar" id="nav">
+                <a href="#welcome"><span class="name">Urian Chang</span></a>
+                <a class="navbarLink" href="#portfolio">Stuff I made</a>
+            </div>
 
-        <div class="welcome page" id="page1">
-            <a id="welcome" class="smooth"></a>
-            <h2 class="mid-text">Hello, friend!</h2>
-            <h2 class="mid-text"><div id="typewriter" class="typewriter"></div></h2>
-            <h3 class="mid-text">
-                <a class="fa fa-lg fa-linkedin-square" href="https://www.linkedin.com/in/urianchang/"></a>
-                <a class="fa fa-lg fa-github" href="https://github.com/urianchang"></a>
-                <a class="fa fa-lg fa-envelope" href="mailto:urianchang@gmail.com"></a>
-            </h3>
+            <div class="welcome page" id="page1">
+                <a id="welcome" class="smooth"></a>
+                <h2 class="mid-text">Hello, friend!</h2>
+                <h2 class="mid-text"><div id="typewriter" class="typewriter"></div></h2>
+                <h3 class="mid-text">
+                    <a title="LinkedIn" class="fa fa-lg fa-linkedin-square faa-bounce animated-hover" href="https://www.linkedin.com/in/urianchang/"></a>
+                    <a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover" href="https://github.com/urianchang"></a>
+                    <a title="E-mail" class="fa fa-lg fa-envelope faa-bounce animated-hover" href="mailto:urianchang@gmail.com"></a>
+                </h3>
+            </div>
+
+            <div class="page" id="page2">
+                <a id="portfolio" class="smooth"></a>
+                <div class="portfolio-stuff">
+                    <h2>Portfolio</h2>
+                    <h3>Web</h3>
+                    <h3>iOS</h3>
+                </div>
+            </div>
         </div>
-
-        <div class="page" id="page2">
-            <a id="portfolio" class="smooth"></a>
-            <h2>Portfolio</h2>
-            <h3>Web</h3>
-            <h3>iOS</h3>
-        </div>
-
     </body>
 </html>

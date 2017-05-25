@@ -35,9 +35,16 @@
     line-height: 46px;
     font-size: 17px;
 }
+.portfolio-stuff {
+    margin-top: 46px;
+}
 .welcome {
     margin-top: 46px; /* Add a top margin to avoid content overlay */
     text-align: center;
+    color: white;
+    background: #fc00ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .mid-text {
     position: relative;
@@ -53,14 +60,18 @@
 }
 .welcome h3 a {
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 0px 10px;
+    opacity: 0.6;
 }
 .welcome h3 a:hover {
-    color: red;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 1.0;
 }
 .typewriter {
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     padding-right: 2px;
     display: inline;
 }

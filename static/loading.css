@@ -1,0 +1,18 @@
+.loading {
+    width:100%;
+    height:100%;
+    position: fixed;
+    top: 0px;
+    z-index:9999;
+    background-color: black;
+    text-align: center;
+}
+.loading i {
+    color: #B2DFEE;
+    position: relative;
+    top: 30%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.content_class {
+    visibility: hidden;
+}
