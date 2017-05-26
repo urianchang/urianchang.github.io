@@ -43,7 +43,7 @@ $(document).ready( function() {
     });
 
     function showDivs(n) {
-        console.log("button pressed", n);
+        // console.log("button pressed", n);
         var i;
         var x = document.getElementsByClassName("mySlides");
         if (n > x.length) {slideIndex = 1}
