@@ -27,4 +27,30 @@ $(document).ready( function() {
     }
 
     var interval = setInterval(updateText, 100);
+
+    //: Portfolio slideshow
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    $('#leftButton').click(function() {
+        slideIndex -= 1;
+        showDivs(slideIndex);
+    });
+
+    $('#rightButton').click(function() {
+        slideIndex += 1;
+        showDivs(slideIndex);
+    });
+
+    function showDivs(n) {
+        console.log("button pressed", n);
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "inline-block";
+    }
 })

@@ -35,8 +35,56 @@
     line-height: 46px;
     font-size: 17px;
 }
+.portfolio {
+    color: white;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow: hidden;
+}
 .portfolio-stuff {
-    margin-top: 46px;
+    margin-top: 10px;
+    text-align: center;
+    overflow: auto;
+}
+.portfolio-stuff h1 {
+    margin-bottom: 10px;
+}
+.portfolio-slideshow {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.mySlides {
+    height: 450px;
+    /*background: blue;*/
+}
+.mySlides img {
+    margin: 10px;
+    max-height: 70%;
+    max-width: 90%;
+    border: 3px solid black;
+}
+.portfolio-element {
+    display: inline-block;
+}
+.project-title {
+    margin-bottom: 10px;
+}
+.project-description {
+    margin: 0px 30px 10px 30px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.button {
+    font-size: 30px;
+    color: white;
+    /*margin-top: 200px;*/
+    /*vertical-align: top;*/
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
 }
 .welcome {
     margin-top: 46px; /* Add a top margin to avoid content overlay */
@@ -58,13 +106,13 @@
 .welcome h3 {
     margin-top: 10px;
 }
-.welcome h3 a {
+.myIcons {
     text-decoration: none;
     color: white;
     margin: 0px 10px;
     opacity: 0.6;
 }
-.welcome h3 a:hover {
+.myIcons:hover {
     -webkit-transform: scale(1.5);
     -ms-transform: scale(1.5);
     transform: scale(1.5);
