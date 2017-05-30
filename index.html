@@ -18,65 +18,69 @@
         <title>Urian Chang</title>
     </head>
     <body>
+        <a id="top" class="smooth"></a>
         <div id="loading" class="loading">
             <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
             <span class="sr-only">Loading...</span>
         </div>
+
         <div id="content" class="content_class">
+
             <div class="navbar" id="nav">
-                <a href="#"><span class="name">Urian Chang</span></a>
-                <a class="navbarLink" href="#portfolio">Stuff I made</a>
-                <a class="navbarLink" href="http://urianchang.com/React-Resume/">Resume</a>
+                <a href="#top"><span class="name">Urian Chang</span></a>
+                <a href="#portfolio">Stuff I made</a>
+                <a href="http://urianchang.com/React-Resume/">Resume</a>
+                <a href="javascript:void(0);" class="icon" onclick="showMenu()"><i class="fa fa-bars"></i></a>
             </div>
 
             <div class="welcome page" id="page1">
-                <a id="welcome" class="smooth"></a>
-                <h2 class="mid-text">Hello, friend!</h2>
-                <h2 class="mid-text"><div id="typewriter" class="typewriter"></div></h2>
-                <h3 class="mid-text">
-                    <a title="LinkedIn" class="fa fa-lg fa-linkedin-square faa-bounce animated-hover myIcons" href="https://www.linkedin.com/in/urianchang/"></a>
-                    <a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang"></a>
-                    <a title="E-mail" class="fa fa-lg fa-envelope faa-bounce animated-hover myIcons" href="mailto:urianchang@gmail.com"></a>
-                </h3>
-            </div>
+                    <a id="welcome" class="smooth"></a>
+                    <h2 class="mid-text">Hello, friend!</h2>
+                    <h2 class="mid-text"><div id="typewriter" class="typewriter"></div></h2>
+                    <h3 class="mid-text">
+                        <a title="LinkedIn" class="fa fa-lg fa-linkedin-square faa-bounce animated-hover myIcons" href="https://www.linkedin.com/in/urianchang/"></a>
+                        <a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang"></a>
+                        <a title="E-mail" class="fa fa-lg fa-envelope faa-bounce animated-hover myIcons" href="mailto:urianchang@gmail.com"></a>
+                    </h3>
+                </div>
 
             <div class="portfolio page" id="page2">
-                <a id="portfolio" class="smooth"></a>
-                <div class="portfolio-stuff">
-                    <h1>Portfolio</h1>
-                    <div class="portfolio-slideshow">
-                        <button class="button portfolio-element" id="leftButton"><i class="fa fa-arrow-left"></i></button>
-                        <div class="mySlides portfolio-element">
-                            <img src="static/img/kanji.png">
-                            <h3 class="project-title">LearnKanjiSkip</h3>
-                            <p class="project-description">Website for teaching how to use the system of kanji indexing by patterns (SKIP).</p>
-                            <h4 class="project-links">
-                                <a title="Website" class="fa fa-lg fa-globe faa-bounce animated-hover myIcons" href="http://52.38.37.106/"></a>
-                                <a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang/kanji_skip"></a>
-                            </h4>
+                    <a id="portfolio" class="smooth"></a>
+                    <div class="portfolio-stuff">
+                        <h1>Portfolio</h1>
+                        <div class="portfolio-slideshow">
+                            <button class="button portfolio-element" id="leftButton"><i class="fa fa-arrow-left"></i></button>
+                            <div class="mySlides portfolio-element">
+                                <img src="static/img/kanji.png">
+                                <h3 class="project-title">LearnKanjiSkip</h3>
+                                <p class="project-description">Website for teaching how to use the system of kanji indexing by patterns (SKIP).</p>
+                                <h4 class="project-links">
+                                    <a title="Website" class="fa fa-lg fa-globe faa-bounce animated-hover myIcons" href="http://52.38.37.106/"></a>
+                                    <a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang/kanji_skip"></a>
+                                </h4>
+                            </div>
+                            <div class="mySlides portfolio-element">
+                                <img src="static/img/flyaway.png">
+                                <h3 class="project-title">Let's Fly Away</h3>
+                                <p class="project-description">iOS game in which you fly around collecting lost balloons.</p>
+                                <h4 class="project-links"><a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang/letsFlyAway"></a></h4>
+                            </div>
+                            <div class="mySlides portfolio-element">
+                                <img src="static/img/chorusline.png">
+                                <h3 class="project-title">ChorusLine</h3>
+                                <p class="project-description">iOS app for lightweight music composition.</p>
+                                <h4 class="project-links"><a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang/ChorusLine"></a></h4>
+                            </div>
+                            <div class="mySlides portfolio-element">
+                                <img src="static/img/runbud.png">
+                                <h3 class="project-title">RunBud</h3>
+                                <p class="project-description">iOS app to help runners connect and share running routes.</p>
+                                <h4 class="project-links"><a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang/RunBud"></a></h4>
+                            </div>
+                            <button class="button portfolio-element" id="rightButton"><i class="fa fa-arrow-right"></i></button>
                         </div>
-                        <div class="mySlides portfolio-element">
-                            <img src="static/img/flyaway.png">
-                            <h3 class="project-title">Let's Fly Away</h3>
-                            <p class="project-description">iOS game in which you fly around collecting lost balloons.</p>
-                            <h4 class="project-links"><a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang/letsFlyAway"></a></h4>
-                        </div>
-                        <div class="mySlides portfolio-element">
-                            <img src="static/img/chorusline.png">
-                            <h3 class="project-title">ChorusLine</h3>
-                            <p class="project-description">iOS app for lightweight music composition.</p>
-                            <h4 class="project-links"><a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang/ChorusLine"></a></h4>
-                        </div>
-                        <div class="mySlides portfolio-element">
-                            <img src="static/img/runbud.png">
-                            <h3 class="project-title">RunBud</h3>
-                            <p class="project-description">iOS app to help runners connect and share running routes.</p>
-                            <h4 class="project-links"><a title="GitHub" class="fa fa-lg fa-github faa-bounce animated-hover myIcons" href="https://github.com/urianchang/RunBud"></a></h4>
-                        </div>
-                        <button class="button portfolio-element" id="rightButton"><i class="fa fa-arrow-right"></i></button>
                     </div>
                 </div>
-            </div>
         </div>
     </body>
 </html>
