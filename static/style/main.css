@@ -60,22 +60,18 @@ CSS for main page:
     font-size: 14px;
     line-height: 46px;
 }
-
 /* Hide link to open and close navbar on small screens */
 .navbar .icon {
     display: none;
 }
-
 .navbar a:not(:first-child):hover {
     text-decoration: underline;
 }
-
 .name {
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 17px;
 }
-
 /* Screen is less than 600px wide */
 @media screen and (max-width: 600px) {
   .navbar a:not(:first-child) {display: none;}
@@ -85,7 +81,6 @@ CSS for main page:
     line-height: 46px;
   }
 }
-
 /* Display links vertically */
 @media screen and (max-width: 600px) {
   .navbar.responsive {
@@ -135,6 +130,7 @@ CSS for main page:
     -ms-transform: scale(1.5);
     transform: scale(1.5);
     opacity: 1.0;
+    color: #FFC04C;
 }
 .typewriter {
     border-right: 1px solid white;
@@ -183,12 +179,13 @@ CSS for main page:
 .button {
     font-size: 30px;
     color: white;
-    /*margin-top: 200px;*/
-    /*vertical-align: top;*/
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
     cursor:pointer;
     overflow: hidden;
     outline:none;
+}
+.button:hover {
+  color: #FFC04C;
 }
