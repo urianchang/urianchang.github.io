@@ -1,3 +1,11 @@
+/*
+CSS for main page:
+  * Column (responsive) & page layouts
+  * Navigation bar
+  * Welcome 'page'
+  * Portfolio 'page'
+*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -23,27 +31,25 @@
     float: left;
     padding: 15px;
 }
-
 .page::after {
     content: "";
     clear: both;
     display: table;
 }
-
 .page {
     width: 100%;
 }
 
+/* Navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #000046;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     height: 46px;
     z-index: 9000;
 }
-
 .navbar a {
     float: left;
     display: block;
@@ -53,7 +59,6 @@
     text-decoration: none;
     font-size: 14px;
     line-height: 46px;
-    /*padding: 10px;*/
 }
 
 /* Hide link to open and close navbar on small screens */
@@ -98,11 +103,49 @@
   }
 }
 
+/* Welcome 'page' */
+.welcome {
+    margin-top: 46px; /* Add a top margin to avoid content overlay */
+    text-align: center;
+    color: white;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000046, #1CB5E0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000046, #1CB5E0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mid-text {
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.welcome h2 {
+    margin-bottom: 10px;
+}
+.welcome h3 {
+    margin-top: 10px;
+}
+.myIcons {
+    text-decoration: none;
+    color: white;
+    margin: 0px 10px;
+    opacity: 0.6;
+}
+.myIcons:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 1.0;
+}
+.typewriter {
+    border-right: 1px solid white;
+    padding-right: 2px;
+    display: inline;
+}
+
+/* Portfolio 'page' */
 .portfolio {
     color: white;
-    background: #360033;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1CB5E0;
     overflow: hidden;
 }
 .portfolio-stuff {
@@ -114,7 +157,7 @@
     margin-bottom: 10px;
 }
 .portfolio-slideshow {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 .mySlides {
     height: 450px;
@@ -148,41 +191,4 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;
-}
-.welcome {
-    margin-top: 46px; /* Add a top margin to avoid content overlay */
-    text-align: center;
-    color: white;
-    background: #fc00ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #00dbde, #fc00ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.mid-text {
-    position: relative;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-.welcome h2 {
-    margin-bottom: 10px;
-}
-.welcome h3 {
-    margin-top: 10px;
-}
-.myIcons {
-    text-decoration: none;
-    color: white;
-    margin: 0px 10px;
-    opacity: 0.6;
-}
-.myIcons:hover {
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
-    opacity: 1.0;
-}
-.typewriter {
-    border-right: 1px solid white;
-    padding-right: 2px;
-    display: inline;
 }
