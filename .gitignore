@@ -1,2 +1,9 @@
+# Idea
+.idea/
+
+# JavaScript
 bower_components/**
 node_modules/**
+
+# OS
+.DS_Store
