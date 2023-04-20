@@ -1,9 +1,2 @@
-# Portfolio website for Urian Chang
-
-Hosted with [GitHub Pages](https://pages.github.com/)
-
-## Tech stack:
-
-* HTML
-* CSS
-* JQuery
+# urianchang.github.io
+My personal website hosted with [GitHub Pages](https://pages.github.com/).
