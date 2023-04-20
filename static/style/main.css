@@ -1,54 +1,39 @@
-/*
-CSS for main page:
-  * Column (responsive) & page layouts
-  * Navigation bar
-  * Welcome 'page'
-  * Portfolio 'page'
-*/
-
 * {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    background: #155765;
 }
 
-/* For column widths */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+/* Nice light blue for color:  */
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-}
-.page::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.page {
+.content {
+    /* Add a top padding to avoid navbar overlay */
+    padding-top: 46px; 
     width: 100%;
 }
 
 /* Navigation bar */
 .navbar {
     overflow: hidden;
-    background-color: #000046;
+    background: #4D2C3D;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     height: 46px;
     z-index: 9000;
+}
+.navbar .name {
+    float: left;
+    display: block;
+    color: white;
+    background: inherit;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 17px;
+    line-height: 46px;
+    padding: 0px 10px;
 }
 .navbar a {
     float: left;
@@ -59,18 +44,17 @@ CSS for main page:
     text-decoration: none;
     font-size: 14px;
     line-height: 46px;
+    background: inherit;
 }
 /* Hide link to open and close navbar on small screens */
 .navbar .icon {
     display: none;
 }
-.navbar a:not(:first-child):hover {
-    text-decoration: underline;
+.fa-bars {
+    background: inherit;
 }
-.name {
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 17px;
+.navbar a:hover {
+    text-decoration: underline;
 }
 /* Screen is less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -96,96 +80,13 @@ CSS for main page:
     display: block;
     text-align: left;
   }
+  .navbar.responsive .name {
+    width: 100%;
+  }
 }
 
-/* Welcome 'page' */
-.welcome {
-    margin-top: 46px; /* Add a top margin to avoid content overlay */
-    text-align: center;
-    color: white;
-    background: #000046;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #000046, #1CB5E0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #000046, #1CB5E0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-.mid-text {
-    position: relative;
-    top: 30%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
-.welcome h2 {
-    margin-bottom: 10px;
-}
-.welcome h3 {
-    margin-top: 10px;
-}
-.myIcons {
-    text-decoration: none;
-    color: white;
-    margin: 0px 10px;
-    opacity: 0.6;
-}
-.myIcons:hover {
-    -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
-    opacity: 1.0;
-    color: #FFC04C;
-}
-.typewriter {
-    border-right: 1px solid white;
-    padding-right: 2px;
-    display: inline;
-}
-
-/* Portfolio 'page' */
-.portfolio {
-    color: white;
-    background: #1CB5E0;
-    overflow: hidden;
-}
-.portfolio-stuff {
-    margin-top: 10px;
-    text-align: center;
-    overflow: auto;
-}
-.portfolio-stuff h1 {
-    margin-bottom: 10px;
-}
-.portfolio-slideshow {
-    background-color: rgba(255, 255, 255, 0.25);
-}
-.mySlides {
-    height: 450px;
-    /*background: blue;*/
-}
-.mySlides img {
-    margin: 10px;
-    max-height: 70%;
-    max-width: 90%;
-    border: 3px solid black;
-}
-.portfolio-element {
-    display: inline-block;
-}
-.project-title {
-    margin-bottom: 10px;
-}
-.project-description {
-    margin: 0px 30px 10px 30px;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-.button {
-    font-size: 30px;
-    color: white;
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-}
-.button:hover {
-  color: #FFC04C;
+.frame {
+  background: #AB9353;
+  padding: 5px;
+  margin: 10px;
 }
